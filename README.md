@@ -7,6 +7,9 @@ Semantic Versioning (semver.org) を扱う Python ライブラリです。
     # Docker イメージをビルドする
     make docker-build
 
+    # コンテナ内で試行錯誤する
+    docker run -it --rm -v $(pwd):/app:ro semver-python:latest bash
+
     # sphinx-quickstart
     make docs
 
