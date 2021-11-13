@@ -4,6 +4,9 @@ Semantic Versioning (semver.org) を扱う Python ライブラリです。
 
 # 開発情報
 
+    # Docker イメージをビルドする
+    docker build -t semver-python:latest .
+
     # テストを実行する
-    make test
+    docker run -it --rm -v $(pwd):/app:ro semver-python:latest python test_semver.py
 
