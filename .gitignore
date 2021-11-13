@@ -4,3 +4,6 @@
 # python
 __pycache__/
 
+# semver target files
+/docs/
+

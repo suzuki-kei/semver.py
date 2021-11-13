@@ -6,3 +6,6 @@ VOLUME /app
 
 ENV PYTHONPATH=/app/semver
 
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
