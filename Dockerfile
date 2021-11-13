@@ -4,3 +4,5 @@ RUN mkdir /app
 WORKDIR /app
 VOLUME /app
 
+ENV PYTHONPATH=/app/semver
+

@@ -8,5 +8,5 @@ Semantic Versioning (semver.org) を扱う Python ライブラリです。
     docker build -t semver-python:latest .
 
     # テストを実行する
-    docker run -it --rm -v $(pwd):/app:ro semver-python:latest python test_semver.py
+    docker run -it --rm -v $(pwd):/app:ro semver-python:latest python -m unittest discover -s test
 
